@@ -177,6 +177,17 @@ public class UserService {
 		return userRepo.findByFacultyIdIdAndRole(facultyId, Role.STUDENT);
 	}
 	
+	@Transactional
+	public void updateDepartmentName(
+	        String oldDept,
+	        String newDept
+	) {
+	    userRepo.updateDepartmentName(
+	            oldDept,
+	            newDept
+	    );
+	}
+	
 	
 	
 	public User uploadProfileImage(int id, MultipartFile file) throws IOException {
