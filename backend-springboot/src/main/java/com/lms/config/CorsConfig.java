@@ -16,7 +16,7 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                             "http://localhost:5173",
-                            "https://leave-management-system-frontend-dun.vercel.app"
+                            "https://leave-management-system-frontend-dun.vercel.app",
                             "https://leaveflow-mahesh.vercel.app"
                         )
                         .allowedMethods("*")
